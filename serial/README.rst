@@ -1,4 +1,4 @@
-.. zephyr:code-sample:: hello_world
+.. zephyr:code-sample:: serial
    :name: Hello World
 
    Print "Hello World" to the console.
@@ -15,7 +15,7 @@ Building and Running
 This application can be built and executed on QEMU as follows:
 
 .. zephyr-app-commands::
-   :zephyr-app: samples/hello_world
+   :zephyr-app: samples/serial
    :host-os: unix
    :board: qemu_x86
    :goals: run

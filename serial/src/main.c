@@ -9,12 +9,9 @@
 
 int main(void)
 {
-	printk("Starting Hello World application...\n");
-	
-	while (1) {
-		printk("Hello World! %s\n", CONFIG_BOARD_TARGET);
-		k_sleep(K_SECONDS(3));
-	}
-
-	return 0;
+	int i = 0;
+    while(1) {
+        k_sleep(K_MSEC(2000));
+        printk("Hello World! %s %d\n", CONFIG_BOARD, i++);
+    }
 }
