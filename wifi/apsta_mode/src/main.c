@@ -176,6 +176,8 @@ static int connect_to_wifi(void)
 			   sizeof(struct wifi_connect_req_params));
 	if (ret) {
 		LOG_ERR("Unable to Connect to (%s)", CONFIG_WIFI_SAMPLE_SSID);
+	}else {
+		LOG_INF("Connection Request Sent to (%s)", CONFIG_WIFI_SAMPLE_SSID);
 	}
 
 	return ret;
